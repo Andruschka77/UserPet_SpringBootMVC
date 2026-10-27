@@ -69,7 +69,7 @@ public class PetControllerTest {
 
         Pet createdPetResponse = objectMapper.readValue(createdPetJson, Pet.class);
 
-        Assertions.assertEquals(pet.getName(), createdPetResponse.getName());
+        Assertions.assertEquals(pet.getName(), createdPetResponse.getId());
         Assertions.assertNotNull(createdPetResponse.getId());
     }
 
